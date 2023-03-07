@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="264.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ventanas.VentanaInicio">
+   <children>
+      <StackPane prefHeight="264.0" prefWidth="295.0" style="-fx-background-image: url('imagenes/gato.png'); -fx-background-size: cover;">
+         <!-- Aquí agregas el resto de los nodos de tu ventana -->
+      </StackPane>
+      <Button fx:id="btnCrear" layoutX="82.0" layoutY="93.0" mnemonicParsing="false" onAction="#clickBtnCrear" text="CREAR PERSONAJE">
+         <font>
+            <Font name="Chalkboard SE Light" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnEscoger" layoutX="73.0" layoutY="148.0" mnemonicParsing="false" onAction="#clickBtnEscoger" text="ESCOGER PERSONAJE">
+         <font>
+            <Font name="Chalkboard SE Light" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnSalir" layoutX="122.0" layoutY="198.0" mnemonicParsing="false" onAction="#clickBtnSalir" opacity="0.75" text="SALIR">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="68.0" layoutY="42.0" text="Bienvenid@" textFill="RED">
+         <font>
+            <Font name="Copperplate" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

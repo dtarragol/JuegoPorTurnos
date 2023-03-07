@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="647.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ventanas.VentanaCrearPersonaje">
+   <children>
+      <Button fx:id="btnGuerrero" layoutX="156.0" layoutY="544.0" mnemonicParsing="false" onAction="#clickBtnGuerrero" text="Guerrero" />
+      <Button fx:id="btnSalir" layoutX="433.0" layoutY="597.0" mnemonicParsing="false" onAction="#clickBtnSalir" text="Salir" />
+      <Label layoutX="56.0" layoutY="31.0" text="Escoge con que personaje quieres competir:" />
+      <Button fx:id="btnMago" layoutX="676.0" layoutY="544.0" mnemonicParsing="false" onAction="#clickBtnMago" text="Mago" />
+      <Pane fx:id="paneFoto1" layoutX="33.0" layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="410.0" />
+      <Pane fx:id="paneFoto2" layoutX="453.0" layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="410.0" />
+   </children>
+</AnchorPane>
