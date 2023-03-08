@@ -78,6 +78,33 @@ public class ConexionMySQL {
             e.printStackTrace();
         }
     }
+    public void sacarPersonajeBBDD(String tabla, String nombre){
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM "+tabla+" WHERE nombre = '"+nombre+"';");
+            while (rs.next()) {
+                if (tabla.equals("Guerrero")) {
+                    int fuerza = rs.getInt("fuerza");
+                    int vida = rs.getInt("vida");
+                    Guerrero guerrero = new Guerrero(nombre, vida, fuerza);
+
+                    System.out.println("Se ha escogido un guerrero");
+                }
+                if (tabla.equals("Mago")) {
+                    int fuerza = rs.getInt("mana");
+                    int vida = rs.getInt("vida");
+                    Guerrero guerrero = new Guerrero(nombre, vida, fuerza);
+
+                    System.out.println("Se ha escogido un mago");
+                }
+            }
+
+            rs.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void cerrarConexion() {
         try {

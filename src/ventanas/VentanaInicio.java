@@ -5,15 +5,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.*;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.scene.control.Button;
-import javafx.application.Application;
-import javafx.stage.Stage;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 public class VentanaInicio implements Initializable{
@@ -49,7 +44,7 @@ public class VentanaInicio implements Initializable{
         Stage stage = (Stage) node.getScene().getWindow();
         stage.close();
         try{
-            Parent root = FXMLLoader.load(VentanaEscogerGuerrero.class.getClassLoader().getResource("ventanas/VentanaEscogerGuerrero.fxml"));
+            Parent root = FXMLLoader.load(VentanaEscogerPersonaje.class.getClassLoader().getResource("ventanas/VentanaEscogerPersonaje.fxml"));
             Scene scene = new Scene(root);
             stage.setTitle("ESCOGIENDO GUERRERO");
             stage.setScene(scene);

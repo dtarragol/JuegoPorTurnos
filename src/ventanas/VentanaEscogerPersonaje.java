@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class VentanaEscogerGuerrero implements Initializable {
+public class VentanaEscogerPersonaje implements Initializable {
     @FXML
     private ComboBox comboBoxPersonajes;
     @FXML
@@ -50,5 +50,14 @@ public class VentanaEscogerGuerrero implements Initializable {
         } catch (IOException e) {
             System.err.println(String.format("Error creando ventana: %s", e.getMessage()));
         }
+    }
+    public void clickBtnAceptar(javafx.event.ActionEvent actionEvent){
+        String personaje = comboBoxPersonajes.getSelectionModel().getSelectedItem().toString();
+        System.out.println(personaje);
+        String[] partes = personaje.split(": ");
+        String clase = partes[0];
+        String nombre = partes[1];
+        ConexionMySQL con = new ConexionMySQL();
+        con.sacarPersonajeBBDD(clase, nombre);
     }
 }

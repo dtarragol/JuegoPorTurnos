@@ -39,7 +39,7 @@ public class VentanaCrearPersonaje implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Image img2 = new Image(getClass().getResourceAsStream("/imagenes/wizard.png"));
-        Image img = new Image(getClass().getResourceAsStream("/imagenes/gato.png"));
+        Image img = new Image(getClass().getResourceAsStream("/imagenes/guerrero.png"));
         ImageView imgView = new ImageView(img);
         ImageView imgView2 = new ImageView(img2);
         imgView.setFitWidth(410);
